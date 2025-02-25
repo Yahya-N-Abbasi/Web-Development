@@ -8,7 +8,7 @@ body {
   background-color: hsl(0, 0%, 8%);
 }
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
   color: hsl(228, 45%, 44%);
 }
@@ -19,21 +19,10 @@ body {
 .container {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 97vh;
   justify-content: center;
   align-items: center;
 }
-.social-card {
-  height: 60vh;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: hsl(0, 0%, 12%);
-  border-radius: 25px;
-}
-
 img {
   width: 100px;
   height: 100px;
@@ -55,7 +44,7 @@ h1 {
 }
 h2 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 10px;
   color: hsl(75, 94%, 57%);
 }
@@ -63,4 +52,74 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   color: white;
+}
+
+@media (width <= 479px) {
+  .social-card {
+    height: 60vh;
+    width: 80vw;
+    min-height: 500px;
+    max-height: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 25px;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+}
+@media (width < 900px) and (width >= 480px) {
+  .social-card {
+    height: 60vh;
+    width: 50vw;
+    min-height: 500px;
+    max-height: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 25px;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+}
+@media (width <= 1200px) and (width >= 900px) {
+  .social-card {
+    height: 60vh;
+    width: 30vw;
+    min-height: 500px;
+    max-height: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 25px;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+@media (width > 1201px) {
+  .social-card {
+    height: 60vh;
+    width: 30vw;
+    max-width: 400px;
+    min-height: 500px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 25px;
+  }
 }
