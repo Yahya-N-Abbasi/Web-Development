@@ -1,7 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(228, 45%, 44%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.social-card {
+  height: 60vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 25px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.social-link {
+  width: 90%;
+  height: 45px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 20%);
+  padding: 12px;
+  border-radius: 8px;
+}
+h1 {
+  font-weight: 700;
+  color: white;
+}
+h2 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: hsl(75, 94%, 57%);
+}
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
 }
